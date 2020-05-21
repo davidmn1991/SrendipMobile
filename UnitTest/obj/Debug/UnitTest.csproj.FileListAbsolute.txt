@@ -1,0 +1,16 @@
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/UnitTest/bin/Debug/UnitTest.dll
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/UnitTest/bin/Debug/UnitTest.pdb
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/UnitTest/obj/Debug/UnitTest.csproj.CoreCompileInputs.cache
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/UnitTest/obj/Debug/UnitTest.dll
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/UnitTest/obj/Debug/UnitTest.pdb
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/UnitTest/bin/Debug/UnitTest.dll
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/UnitTest/bin/Debug/UnitTest.pdb
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/UnitTest/obj/Debug/UnitTest.csproj.CoreCompileInputs.cache
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/UnitTest/obj/Debug/UnitTest.dll
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/UnitTest/obj/Debug/UnitTest.pdb
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/UnitTest/bin/Debug/UnitTest.dll
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/UnitTest/bin/Debug/UnitTest.pdb
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/UnitTest/obj/Debug/UnitTest.csprojAssemblyReference.cache
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/UnitTest/obj/Debug/UnitTest.csproj.CoreCompileInputs.cache
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/UnitTest/obj/Debug/UnitTest.dll
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/UnitTest/obj/Debug/UnitTest.pdb

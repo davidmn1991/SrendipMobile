@@ -1,0 +1,744 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{36E292AD-82F4-460F-8E7D-BB4B761EF934}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PorpoiseMobileApp.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>PorpoiseMobileAppiOS</AssemblyName>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchProfiling>false</MtouchProfiling>
+    <CodesignKey>Apple Development: David Negrete (VS92TM8NRQ)</CodesignKey>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <CodesignEntitlements>entitlements.plist</CodesignEntitlements>
+    <MtouchExtraArgs>
+    </MtouchExtraArgs>
+    <MtouchSdkVersion>10.3</MtouchSdkVersion>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARM64</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignProvision>Srendip Distribution</CodesignProvision>
+    <MtouchDebug>true</MtouchDebug>
+    <DeviceSpecificBuild>false</DeviceSpecificBuild>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchUseThumb>true</MtouchUseThumb>
+    <MtouchLink>SdkOnly</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <CodesignKey>Apple Development: David Negrete (VS92TM8NRQ)</CodesignKey>
+    <CodesignProvision>VS: WildCard Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <CodesignEntitlements>entitlements.plist</CodesignEntitlements>
+    <MtouchProfiling>false</MtouchProfiling>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignProvision>Srendip Provisional Profile</CodesignProvision>
+    <OptimizePNGs>false</OptimizePNGs>
+    <BuildIpa>true</BuildIpa>
+    <IpaMetadata>Entitlements.plist</IpaMetadata>
+    <MtouchFastDev>false</MtouchFastDev>
+    <MtouchLink>SdkOnly</MtouchLink>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AWSSDK.CognitoIdentity, Version=3.1.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AWSSDK.CognitoIdentity.3.1.1.3\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10\AWSSDK.CognitoIdentity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AWSSDK.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AWSSDK.Core.3.1.10.0\lib\Xamarin.iOS10\AWSSDK.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AWSSDK.S3, Version=3.1.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AWSSDK.S3.3.1.9.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10\AWSSDK.S3.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="AWSSDK.SecurityToken, Version=3.1.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\AWSSDK.SecurityToken.3.1.4.5\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+xamarinios10+MonoTouch10\AWSSDK.SecurityToken.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plugin.Permissions, Version=1.1.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.Permissions.1.1.7\lib\Xamarin.iOS10\Plugin.Permissions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plugin.Permissions.Abstractions, Version=1.1.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Plugin.Permissions.1.1.7\lib\Xamarin.iOS10\Plugin.Permissions.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfChart.iOS, Version=14.2451.0.28, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfChart.IOS.14.2.0.28\lib\Xamarin.iOS10\Syncfusion.SfChart.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da">
+      <HintPath>..\..\packages\Autofac.3.5.2\lib\portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoTouch.Dialog-1" />
+    <Reference Include="System.Json" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\Xamarin.iOS10\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\Xamarin.iOS10\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage">
+      <HintPath>..\..\packages\PCLStorage.1.0.2\lib\portable-Xamarin.iOS+Xamarin.Mac\PCLStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLStorage.Abstractions">
+      <HintPath>..\..\packages\PCLStorage.1.0.2\lib\portable-Xamarin.iOS+Xamarin.Mac\PCLStorage.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Validation">
+      <HintPath>..\..\packages\Validation.2.0.6.15003\lib\portable-net40+sl50+win+wpa81+wp80+Xamarin.iOS10+MonoAndroid10+MonoTouch10\Validation.dll</HintPath>
+    </Reference>
+    <Reference Include="PCLCrypto">
+      <HintPath>..\..\packages\PCLCrypto.1.0.2.15130\lib\Xamarin.iOS\PCLCrypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfGauge.iOS">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfGauge.IOS.14.2.0.28\lib\Xamarin.iOS10\Syncfusion.SfGauge.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Calabash">
+      <HintPath>..\..\packages\Xamarin.TestCloud.Agent.0.21.9\lib\Xamarin.iOS\Calabash.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK-1.0" />
+    <Reference Include="System.Drawing.Common.dll" />
+    <Reference Include="MvvmCross.Platform">
+      <HintPath>..\..\packages\MvvmCross.Platform.5.7.0\lib\Xamarin.iOS10\MvvmCross.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Platform.iOS">
+      <HintPath>..\..\packages\MvvmCross.Platform.5.7.0\lib\Xamarin.iOS10\MvvmCross.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Core">
+      <HintPath>..\..\packages\MvvmCross.Core.5.7.0\lib\Xamarin.iOS10\MvvmCross.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.iOS">
+      <HintPath>..\..\packages\MvvmCross.Core.5.7.0\lib\Xamarin.iOS10\MvvmCross.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding">
+      <HintPath>..\..\packages\MvvmCross.Binding.5.7.0\lib\Xamarin.iOS10\MvvmCross.Binding.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Binding.iOS">
+      <HintPath>..\..\packages\MvvmCross.Binding.5.7.0\lib\Xamarin.iOS10\MvvmCross.Binding.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Localization">
+      <HintPath>..\..\packages\MvvmCross.Binding.5.7.0\lib\Xamarin.iOS10\MvvmCross.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\packages\System.Collections.Immutable.1.4.0\lib\netstandard2.0\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Visibility">
+      <HintPath>..\..\packages\MvvmCross.Plugin.Visibility.5.7.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Visibility.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Visibility.iOS">
+      <HintPath>..\..\packages\MvvmCross.Plugin.Visibility.5.7.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Visibility.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File">
+      <HintPath>..\..\packages\MvvmCross.Plugin.File.5.7.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.File.iOS">
+      <HintPath>..\..\packages\MvvmCross.Plugin.File.5.7.0\lib\Xamarin.iOS10\MvvmCross.Plugins.File.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache">
+      <HintPath>..\..\packages\MvvmCross.Plugin.DownloadCache.5.7.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.DownloadCache.iOS">
+      <HintPath>..\..\packages\MvvmCross.Plugin.DownloadCache.5.7.0\lib\Xamarin.iOS10\MvvmCross.Plugins.DownloadCache.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.PictureChooser">
+      <HintPath>..\..\packages\MvvmCross.Plugin.PictureChooser.5.7.0\lib\Xamarin.iOS10\MvvmCross.Plugins.PictureChooser.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.PictureChooser.iOS">
+      <HintPath>..\..\packages\MvvmCross.Plugin.PictureChooser.5.7.0\lib\Xamarin.iOS10\MvvmCross.Plugins.PictureChooser.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.Settings">
+      <HintPath>..\..\packages\Acr.Settings.7.0.0\lib\Xamarin.iOS10\Acr.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Acr.Settings.Interface">
+      <HintPath>..\..\packages\Acr.Settings.7.0.0\lib\Xamarin.iOS10\Acr.Settings.Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="MvvmCross.Plugins.Json">
+      <HintPath>..\..\packages\MvvmCross.Plugin.Json.5.7.0\lib\Xamarin.iOS10\MvvmCross.Plugins.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.RangeSlider.Common">
+      <HintPath>..\..\packages\Xamarin.RangeSlider.1.0.2\lib\Xamarin.iOS10\Xamarin.RangeSlider.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.RangeSlider.iOS">
+      <HintPath>..\..\packages\Xamarin.RangeSlider.1.0.2\lib\Xamarin.iOS10\Xamarin.RangeSlider.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Licensing">
+      <HintPath>..\..\packages\Syncfusion.Licensing.17.4.0.44\lib\Xamarin.iOS10\Syncfusion.Licensing.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.SfRangeSlider.iOS">
+      <HintPath>..\..\packages\Syncfusion.Xamarin.SfRangeSlider.IOS.17.4.0.44\lib\Xamarin.iOS10\Syncfusion.SfRangeSlider.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.CoreKit">
+      <HintPath>..\..\packages\Xamarin.Facebook.CoreKit.iOS.5.12.0\lib\xamarinios10\Facebook.CoreKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.LoginKit">
+      <HintPath>..\..\packages\Xamarin.Facebook.LoginKit.iOS.5.12.0\lib\xamarinios10\Facebook.LoginKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.MarketingKit">
+      <HintPath>..\..\packages\Xamarin.Facebook.MarketingKit.iOS.5.11.1\lib\xamarinios10\Facebook.MarketingKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.PlacesKit">
+      <HintPath>..\..\packages\Xamarin.Facebook.PlacesKit.iOS.5.12.0\lib\xamarinios10\Facebook.PlacesKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.ShareKit">
+      <HintPath>..\..\packages\Xamarin.Facebook.ShareKit.iOS.5.12.0\lib\xamarinios10\Facebook.ShareKit.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.FilePicker">
+      <HintPath>..\..\packages\Xamarin.Plugin.FilePicker.2.1.34\lib\xamarinios10\Plugin.FilePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="cloudrail-si-xamarin-ios-sdk">
+      <HintPath>..\..\packages\Xamarin.Instagram.Api.iOS.1.2.20\lib\Xamarin.iOS10\cloudrail-si-xamarin-ios-sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Essentials">
+      <HintPath>..\..\packages\Xamarin.Essentials.1.5.3.1\lib\xamarinios10\Xamarin.Essentials.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>..\..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.2.1.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+      <HintPath>..\..\packages\Microsoft.Extensions.Logging.Abstractions.2.1.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging">
+      <HintPath>..\..\packages\Microsoft.IdentityModel.Logging.5.6.0\lib\netstandard2.0\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>..\..\packages\System.Runtime.CompilerServices.Unsafe.4.5.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Primitives">
+      <HintPath>..\..\packages\Microsoft.Extensions.Primitives.2.1.0\lib\netstandard2.0\Microsoft.Extensions.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+      <HintPath>..\..\packages\Microsoft.Extensions.Configuration.Abstractions.2.1.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration">
+      <HintPath>..\..\packages\Microsoft.Extensions.Configuration.2.1.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Configuration.Binder">
+      <HintPath>..\..\packages\Microsoft.Extensions.Configuration.Binder.2.1.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Binder.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Options">
+      <HintPath>..\..\packages\Microsoft.Extensions.Options.2.1.0\lib\netstandard2.0\Microsoft.Extensions.Options.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.Logging">
+      <HintPath>..\..\packages\Microsoft.Extensions.Logging.2.1.0\lib\netstandard2.0\Microsoft.Extensions.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens">
+      <HintPath>..\..\packages\Microsoft.IdentityModel.Tokens.5.6.0\lib\netstandard2.0\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.JsonWebTokens">
+      <HintPath>..\..\packages\Microsoft.IdentityModel.JsonWebTokens.5.6.0\lib\netstandard2.0\Microsoft.IdentityModel.JsonWebTokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols">
+      <HintPath>..\..\packages\Microsoft.IdentityModel.Protocols.5.6.0\lib\netstandard2.0\Microsoft.IdentityModel.Protocols.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel.Tokens.Jwt">
+      <HintPath>..\..\packages\System.IdentityModel.Tokens.Jwt.5.6.0\lib\netstandard2.0\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect">
+      <HintPath>..\..\packages\Microsoft.IdentityModel.Protocols.OpenIdConnect.5.6.0\lib\netstandard2.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web">
+      <HintPath>..\..\packages\System.Text.Encodings.Web.4.5.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="IdentityModel">
+      <HintPath>..\..\packages\IdentityModel.4.1.0\lib\netstandard2.0\IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="IdentityModel.OidcClient">
+      <HintPath>..\..\packages\IdentityModel.OidcClient.3.1.2\lib\netstandard2.0\IdentityModel.OidcClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Auth0.OidcClient.Core">
+      <HintPath>..\..\packages\Auth0.OidcClient.Core.3.1.2\lib\netstandard2.0\Auth0.OidcClient.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Auth0.OidcClient">
+      <HintPath>..\..\packages\Auth0.OidcClient.iOS.3.1.2\lib\Xamarin.iOS10\Auth0.OidcClient.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="NoPhotoPost.xib" />
+    <InterfaceDefinition Include="TransitionViewController.xib" />
+    <InterfaceDefinition Include="UzysAssetsPickerController.xib" />
+    <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="Views\MainView.xib" />
+    <InterfaceDefinition Include="example.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Info.plist" />
+    <None Include="packages.config" />
+    <None Include="Converters\DateToNSDateConverter.cs.orig" />
+    <None Include="Converters\DateToNSDateConverter.cs.rej" />
+    <None Include="ToDo-MvvmCross\_ iOS UI.txt" />
+    <None Include="AppDelegate.cs.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bindings\MvxActivityIndicatorHiddenTargetBinding.cs" />
+    <Compile Include="Bindings\MvxSegmentedControlSelectedSegmentTargetBinding.cs" />
+    <Compile Include="LinkerPleaseInclude.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Custom\PorpoiseView.cs" />
+    <Compile Include="Custom\PorpoiseView.designer.cs">
+      <DependentUpon>PorpoiseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\PorpoiseTextView.cs" />
+    <Compile Include="Custom\PorpoiseTextView.designer.cs">
+      <DependentUpon>PorpoiseTextView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ConsoleLogger.cs" />
+    <Compile Include="Services\EncryptionService.cs" />
+    <Compile Include="Setup.cs" />
+    <Compile Include="Startup\AppDomainWrapper.cs" />
+    <Compile Include="Startup\iOSRegistry.cs" />
+    <Compile Include="LoginViewController.cs" />
+    <Compile Include="LoginViewController.designer.cs">
+      <DependentUpon>LoginViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MvvmViewController.cs" />
+    <Compile Include="LoadingViewController.cs" />
+    <Compile Include="LoadingViewController.designer.cs">
+      <DependentUpon>LoadingViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\KeyboardManager.cs" />
+    <Compile Include="HomeViewController.cs" />
+    <Compile Include="HomeViewController.designer.cs">
+      <DependentUpon>HomeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\DateToNSDateConverter.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Interfaces\IDisplayHint.cs" />
+    <Compile Include="Helpers\Extensions.cs" />
+    <Compile Include="Custom\PorpoiseButton.cs" />
+    <Compile Include="Custom\PorpoiseButton.designer.cs">
+      <DependentUpon>PorpoiseButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\PorpoiseColors.cs" />
+    <Compile Include="Custom\PorpoiseEditText.cs" />
+    <Compile Include="Custom\PorpoiseEditText.designer.cs">
+      <DependentUpon>PorpoiseEditText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\PorpoiseTabNavigationController.cs" />
+    <Compile Include="Bindings\PorpoiseTextEditTargetBinding.cs" />
+    <Compile Include="Helpers\CameraHelper.cs" />
+    <Compile Include="Converters\UriToImageConverter.cs" />
+    <Compile Include="Converters\AttributedPostDetailsConverter.cs" />
+    <Compile Include="Custom\LoadingOverlay.cs" />
+    <Compile Include="Converters\EditPostButtonHiddenConverter.cs" />
+    <Compile Include="Services\DummyImageRotator.cs" />
+    <Compile Include="UploadImageContainer.cs" />
+    <Compile Include="UploadImageContainer.designer.cs">
+      <DependentUpon>UploadImageContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomGoalScrollView.cs" />
+    <Compile Include="CustomGoalScrollView.designer.cs">
+      <DependentUpon>CustomGoalScrollView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GoalTapDelegate.cs" />
+    <Compile Include="Converters\ProfileImageConverter.cs" />
+    <Compile Include="Converters\CompanyNameLocationConverter.cs" />
+    <Compile Include="Converters\HighlightLineConstraintConverter.cs" />
+    <Compile Include="Custom\PorpoiseTextViewDelegate.cs" />
+    <Compile Include="Custom\PorpoiseLabel.cs" />
+    <Compile Include="Custom\PorpoiseLabel.designer.cs">
+      <DependentUpon>PorpoiseLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\PorpoiseImagePicker.cs" />
+    <Compile Include="Converters\NoPhotoPostBackgroundColorConverter.cs" />
+    <Compile Include="Converters\PostColorImageConverter.cs" />
+    <Compile Include="MoreNavigationDelegate.cs" />
+    <Compile Include="Services\PorpoiseImage.cs" />
+    <Compile Include="Converters\DotsButtonHiddenConverter.cs" />
+    <Compile Include="Custom\PorpoiseTextField.cs" />
+    <Compile Include="Custom\PorpoiseFormattedString.cs" />
+    <Compile Include="TransitionViewController.cs" />
+    <Compile Include="TransitionViewController.designer.cs">
+      <DependentUpon>TransitionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\RangePointerConverter.cs" />
+    <Compile Include="Custom\PorpoiseImage.cs" />
+    <Compile Include="Custom\PorpoiseTableDelegate.cs" />
+    <Compile Include="LinkerSafeAttribute.cs" />
+    <Compile Include="Converters\ByteToUImageConverter.cs" />
+    <Compile Include="Converters\ByteUImageConverter.cs" />
+    <Compile Include="Introduction.cs" />
+    <Compile Include="Introduction.designer.cs">
+      <DependentUpon>Introduction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IntroductionViewController.cs" />
+    <Compile Include="IntroductionViewController.designer.cs">
+      <DependentUpon>IntroductionViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginFirstViewController.cs" />
+    <Compile Include="LoginFirstViewController.designer.cs">
+      <DependentUpon>LoginFirstViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup1ViewController.cs" />
+    <Compile Include="Signup1ViewController.designer.cs">
+      <DependentUpon>Signup1ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup2ViewController.cs" />
+    <Compile Include="Signup2ViewController.designer.cs">
+      <DependentUpon>Signup2ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup3ViewController.cs" />
+    <Compile Include="Signup3ViewController.designer.cs">
+      <DependentUpon>Signup3ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signup4ViewController.cs" />
+    <Compile Include="Signup4ViewController.designer.cs">
+      <DependentUpon>Signup4ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickingMediaFromGallery.cs" />
+    <Compile Include="Signup5ViewController.cs" />
+    <Compile Include="Signup5ViewController.designer.cs">
+      <DependentUpon>Signup5ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bootstrap\VisibilityPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\FilePluginBootstrap.cs" />
+    <Compile Include="Views\MainView.designer.cs" />
+    <Compile Include="Views\MainView.cs" />
+    <Compile Include="DebugTrace.cs" />
+    <Compile Include="Bootstrap\DownloadCachePluginBootstrap.cs" />
+    <Compile Include="Bootstrap\PictureChooserPluginBootstrap.cs" />
+    <Compile Include="Bootstrap\JsonPluginBootstrap.cs" />
+    <Compile Include="EventFirstViewController.cs" />
+    <Compile Include="EventFirstViewController.designer.cs">
+      <DependentUpon>EventFirstViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventLastViewController.cs" />
+    <Compile Include="EventLastViewController.designer.cs">
+      <DependentUpon>EventLastViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AllProfilesViewController.cs" />
+    <Compile Include="AllProfilesViewController.designer.cs">
+      <DependentUpon>AllProfilesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsPageViewController.cs" />
+    <Compile Include="SettingsPageViewController.designer.cs">
+      <DependentUpon>SettingsPageViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenderFilterViewController.cs" />
+    <Compile Include="GenderFilterViewController.designer.cs">
+      <DependentUpon>GenderFilterViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FireModeViewController.cs" />
+    <Compile Include="FireModeViewController.designer.cs">
+      <DependentUpon>FireModeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePageViewController.cs" />
+    <Compile Include="HomePageViewController.designer.cs">
+      <DependentUpon>HomePageViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SavedProfilesViewController.cs" />
+    <Compile Include="SavedProfilesViewController.designer.cs">
+      <DependentUpon>SavedProfilesViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SavedProfilesCell.cs" />
+    <Compile Include="SavedProfilesCell.designer.cs">
+      <DependentUpon>SavedProfilesCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileViewController.cs" />
+    <Compile Include="ProfileViewController.designer.cs">
+      <DependentUpon>ProfileViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileBubbleViewController.cs" />
+    <Compile Include="ProfileBubbleViewController.designer.cs">
+      <DependentUpon>ProfileBubbleViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BubbleBoardViewController.cs" />
+    <Compile Include="BubbleBoardViewController.designer.cs">
+      <DependentUpon>BubbleBoardViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BiggestPetPeeveViewController.cs" />
+    <Compile Include="BiggestPetPeeveViewController.designer.cs">
+      <DependentUpon>BiggestPetPeeveViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PetListViewController.cs" />
+    <Compile Include="PetListViewController.designer.cs">
+      <DependentUpon>PetListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPetViewController.cs" />
+    <Compile Include="AddPetViewController.designer.cs">
+      <DependentUpon>AddPetViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyResumeViewController.cs" />
+    <Compile Include="MyResumeViewController.designer.cs">
+      <DependentUpon>MyResumeViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyProfileViewController.cs" />
+    <Compile Include="MyProfileViewController.designer.cs">
+      <DependentUpon>MyProfileViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TappedProfileViewController.cs" />
+    <Compile Include="TappedProfileViewController.designer.cs">
+      <DependentUpon>TappedProfileViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomPopup.cs" />
+    <Compile Include="LoadingOverlay.cs" />
+    <Compile Include="CustomPopUpView.cs" />
+    <Compile Include="NavigateSettingsViewController.cs" />
+    <Compile Include="NavigateSettingsViewController.designer.cs">
+      <DependentUpon>NavigateSettingsViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TurnOnLocalitationView.cs" />
+    <Compile Include="SingleSavedViewController.cs" />
+    <Compile Include="SingleSavedViewController.designer.cs">
+      <DependentUpon>SingleSavedViewController.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <BundleResource Include="Resources\Logo_outline2.png" />
+    <BundleResource Include="Resources\Logo_outline.png" />
+    <BundleResource Include="Resources\AvenirLT-BlackOblique.ttf" />
+    <BundleResource Include="Resources\AvenirLT-Book.ttf" />
+    <BundleResource Include="Resources\AvenirLT-BookOblique.ttf" />
+    <BundleResource Include="Resources\AvenirLT-Heavy.ttf" />
+    <BundleResource Include="Resources\AvenirLT-HeavyOblique.ttf" />
+    <BundleResource Include="Resources\AvenirLT-Light.ttf" />
+    <BundleResource Include="Resources\AvenirLT-LightOblique.ttf" />
+    <BundleResource Include="Resources\AvenirLT-Medium.ttf" />
+    <BundleResource Include="Resources\AvenirLT-MediumOblique.ttf" />
+    <BundleResource Include="Resources\AvenirLT-Oblique.ttf" />
+    <BundleResource Include="Resources\AvenirLT-Roman.ttf" />
+    <BundleResource Include="Resources\Ubuntu-Bold.ttf" />
+    <BundleResource Include="Resources\Ubuntu-BoldItalic.ttf" />
+    <BundleResource Include="Resources\Ubuntu-Italic.ttf" />
+    <BundleResource Include="Resources\Ubuntu-Light.ttf" />
+    <BundleResource Include="Resources\Ubuntu-LightItalic.ttf" />
+    <BundleResource Include="Resources\Ubuntu-Medium.ttf" />
+    <BundleResource Include="Resources\Ubuntu-MediumItalic.ttf" />
+    <BundleResource Include="Resources\Ubuntu.ttf" />
+    <BundleResource Include="Next.png" />
+    <BundleResource Include="Resources\logo.png" />
+    <BundleResource Include="Resources\logo%402x.png" />
+    <BundleResource Include="Resources\museo-500-webfont.ttf" />
+    <BundleResource Include="Resources\activityIcon.png" />
+    <BundleResource Include="Resources\activityIcon%402x.png" />
+    <BundleResource Include="Resources\plusIcon.png" />
+    <BundleResource Include="Resources\plusIcon%402x.png" />
+    <BundleResource Include="Resources\settings.png" />
+    <BundleResource Include="Resources\settings%402x.png" />
+    <BundleResource Include="Resources\Loading Page.png" />
+    <BundleResource Include="Resources\splash.png" />
+    <BundleResource Include="Resources\iPAD-Loadingscreen.png" />
+    <BundleResource Include="Resources\Splash-Screen.png" />
+    <BundleResource Include="Resources\Artboardcopy%402x.png" />
+    <BundleResource Include="Resources\Artboardcopy.png" />
+    <BundleResource Include="Resources\Splash-Screen%402x.png" />
+    <BundleResource Include="Resources\plusScreen.jpg" />
+    <BundleResource Include="Resources\plusScreen%402x.jpg" />
+    <BundleResource Include="Resources\Splash-Srendip.png" />
+    <BundleResource Include="Resources\sign_up.png" />
+    <BundleResource Include="Resources\login_button.png" />
+    <BundleResource Include="Resources\login_background.png" />
+    <BundleResource Include="Resources\Srendip_icon.png" />
+    <BundleResource Include="Resources\test.png" />
+    <BundleResource Include="Resources\Points1.png" />
+    <BundleResource Include="Resources\OrImage.png" />
+    <BundleResource Include="Resources\Points2.png" />
+    <BundleResource Include="Resources\points3.png" />
+    <BundleResource Include="Resources\Other.png" />
+    <BundleResource Include="Resources\Female.png" />
+    <BundleResource Include="Resources\Male.png" />
+    <BundleResource Include="Resources\other_selected.png" />
+    <BundleResource Include="Resources\female_selected.png" />
+    <BundleResource Include="Resources\male_selected.png" />
+    <BundleResource Include="Resources\Points4.png" />
+    <BundleResource Include="Resources\AddImage.png" />
+    <BundleResource Include="Resources\Points5.png" />
+    <BundleResource Include="Resources\Info_icon.png" />
+    <BundleResource Include="Resources\slider-default7-trackCrossedOver%402x.png" />
+    <BundleResource Include="Resources\slider-default7-trackCrossedOver.png" />
+    <BundleResource Include="Resources\slider-default7-trackBackground%402x.png" />
+    <BundleResource Include="Resources\slider-default7-trackBackground.png" />
+    <BundleResource Include="Resources\slider-default7-track%402x.png" />
+    <BundleResource Include="Resources\slider-default7-track.png" />
+    <BundleResource Include="Resources\slider-default7-handle%402x.png" />
+    <BundleResource Include="Resources\slider-default7-handle.png" />
+    <BundleResource Include="Resources\slider-default7-handle-disabled%402x.png" />
+    <BundleResource Include="Resources\slider-default7-handle-disabled.png" />
+    <BundleResource Include="Resources\ProfileIcon.png" />
+    <BundleResource Include="Resources\HomeIcon.png" />
+    <BundleResource Include="Resources\FireIcon.png" />
+    <BundleResource Include="Resources\Dip away!.png" />
+    <BundleResource Include="Resources\AllProfilePoints.png" />
+    <BundleResource Include="Resources\DIP_logo.png" />
+    <BundleResource Include="Resources\menu_icon.png" />
+    <BundleResource Include="Resources\notification_bell.png" />
+    <BundleResource Include="Resources\Captura de Pantalla 2020-03-22 a la%28s%29 2.57.20 p. m..png" />
+    <BundleResource Include="Resources\gps-disconnected-512.png" />
+    <BundleResource Include="Resources\Icon awesome-cart-plus.png" />
+    <BundleResource Include="Resources\Icon ionic-ios-arrow-back.png" />
+    <BundleResource Include="Resources\Icon ionic-ios-exit.png" />
+    <BundleResource Include="Resources\Icon awesome-transgender-alt.png" />
+    <BundleResource Include="Resources\Icon awesome-question-circle.png" />
+    <BundleResource Include="Resources\Icon awesome-pencil-alt.png" />
+    <BundleResource Include="Resources\Icon ionic-ios-save.png" />
+    <BundleResource Include="Resources\Icon material-cancel.png" />
+    <BundleResource Include="Resources\Icon ionic-ios-notifications-1.png" />
+    <BundleResource Include="Resources\Icon ionic-ios-female.png" />
+    <BundleResource Include="Resources\Icon ionic-ios-male.png" />
+    <BundleResource Include="Resources\Icon ionic-ios-transgender.png" />
+    <BundleResource Include="Resources\Power 3a.png" />
+    <BundleResource Include="Resources\Power 2a.png" />
+    <BundleResource Include="Resources\Rectangle 11.png" />
+    <BundleResource Include="Resources\Power 1a.png" />
+    <BundleResource Include="Resources\eye_image.png" />
+    <BundleResource Include="Resources\Icon ionic-ios-arrow-forward.png" />
+    <BundleResource Include="Resources\photo_xample.png" />
+    <BundleResource Include="Resources\Rectangle 12.png" />
+    <BundleResource Include="Resources\Icon ionic-ios-arrow-back_blue.png" />
+    <BundleResource Include="Resources\Icon awesome-instagram.png" />
+    <BundleResource Include="Resources\Icon awesome-facebook-f.png" />
+    <BundleResource Include="Resources\Icon material-pets.png" />
+    <BundleResource Include="Resources\Icon map-book-store.png" />
+    <BundleResource Include="Resources\Icon awesome-briefcase.png" />
+    <BundleResource Include="Resources\Group 166.png" />
+    <BundleResource Include="Resources\Icon map-food.png" />
+    <BundleResource Include="Resources\Group 46.png" />
+    <BundleResource Include="Resources\Group 47.png" />
+    <BundleResource Include="Resources\Group 51.png" />
+    <BundleResource Include="Resources\Group 170.png" />
+    <BundleResource Include="Resources\Group 172.png" />
+    <BundleResource Include="Resources\Group 173.png" />
+    <BundleResource Include="Resources\Icon awesome-file-pdf.png" />
+    <BundleResource Include="Resources\Group 42.png" />
+    <BundleResource Include="Resources\Group 43.png" />
+    <BundleResource Include="Resources\Group 50.png" />
+    <BundleResource Include="Resources\Icon feather-tv.png" />
+    <BundleResource Include="Resources\Group 165.png" />
+    <BundleResource Include="Resources\bubble_background.png" />
+    <BundleResource Include="Resources\Page 1-3.png" />
+    <BundleResource Include="Resources\Icon material-question-answer.png" />
+    <BundleResource Include="Resources\back_shadow.png" />
+    <BundleResource Include="Resources\No_one_arround.png" />
+    <BundleResource Include="Resources\AddBubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\packages\AWSSDK.CognitoIdentity.3.1.1.3\analyzers\dotnet\cs\AWSSDK.CognitoIdentity.CodeAnalysis.dll" />
+    <Analyzer Include="..\..\packages\AWSSDK.S3.3.1.9.0\analyzers\dotnet\cs\AWSSDK.S3.CodeAnalysis.dll" />
+    <Analyzer Include="..\..\packages\AWSSDK.SecurityToken.3.1.4.5\analyzers\dotnet\cs\AWSSDK.SecurityToken.CodeAnalysis.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\porpoise_icon72x72.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\porpoise_icon144x144.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\artwork-source114.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\1xIcon.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\2xIcon.png">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="PostingTutorialSecond.xcassets\Contents.json">
+      <InProject>false</InProject>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Logo Srendip-2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Logo Srendip-2-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Srendip76x76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Srendip152x152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Srendip167x167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Srendip80x80-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Srendip120x120-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Srendip120x120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Srendip180x180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Srendip40x40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Srendip60x60-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Srendip58x58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Srendip87x87-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PorpoiseMobileApp\PorpoiseMobileApp.Core.csproj">
+      <Project>{EA7ED64D-3FE0-4CB4-B3FD-EA5E1C0367D1}</Project>
+      <Name>PorpoiseMobileApp.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+  </ItemGroup>
+  <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target>
+</Project>

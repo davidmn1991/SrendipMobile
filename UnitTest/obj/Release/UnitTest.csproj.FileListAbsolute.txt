@@ -1,0 +1,6 @@
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/UnitTest/bin/Release/UnitTest.dll
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/UnitTest/obj/Release/UnitTest.csproj.CoreCompileInputs.cache
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/UnitTest/obj/Release/UnitTest.dll
+/Users/luisnegrete/Documents/PorpoiseSourceTree/PorpoiseMobileApp/UnitTest/bin/Release/UnitTest.dll
+/Users/luisnegrete/Documents/PorpoiseSourceTree/PorpoiseMobileApp/UnitTest/obj/Release/UnitTest.csproj.CoreCompileInputs.cache
+/Users/luisnegrete/Documents/PorpoiseSourceTree/PorpoiseMobileApp/UnitTest/obj/Release/UnitTest.dll

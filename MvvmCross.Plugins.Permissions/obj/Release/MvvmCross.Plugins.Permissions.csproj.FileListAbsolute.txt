@@ -1,0 +1,106 @@
+D:/Repos/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Plugins.Permissions.dll
+D:/Repos/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Plugins.Permissions.pdb
+D:/Repos/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Core.dll
+D:/Repos/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Platform.dll
+D:/Repos/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.Abstractions.dll
+D:/Repos/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.dll
+D:/Repos/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.xml
+D:/Repos/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.Abstractions.xml
+D:/Repos/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.csprojResolveAssemblyReference.cache
+D:/Repos/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.dll
+D:/Repos/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.pdb
+D:/Repos/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.dll.mdb
+D:/Repos/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Plugins.Permissions.dll.mdb
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Plugins.Permissions.dll
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Plugins.Permissions.pdb
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Core.dll
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Platform.dll
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.Abstractions.dll
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.dll
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Platform.dll.mdb
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.xml
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.Abstractions.xml
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.csprojResolveAssemblyReference.cache
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.csproj.CoreCompileInputs.cache
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.dll
+/Users/luis/Documents/BACKUP/porpoise-mobile-app/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.pdb
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Plugins.Permissions.dll
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Plugins.Permissions.pdb
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Core.dll
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Platform.dll
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.Abstractions.dll
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.dll
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Platform.dll.mdb
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.xml
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.Abstractions.xml
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.csprojResolveAssemblyReference.cache
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.csproj.CoreCompileInputs.cache
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.dll
+/Users/luis/Documents/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.pdb
+/Volumes/Luis/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Plugins.Permissions.dll
+/Volumes/Luis/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Plugins.Permissions.pdb
+/Volumes/Luis/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Core.dll
+/Volumes/Luis/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Platform.dll
+/Volumes/Luis/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.Abstractions.dll
+/Volumes/Luis/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.dll
+/Volumes/Luis/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Platform.dll.mdb
+/Volumes/Luis/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.xml
+/Volumes/Luis/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.Abstractions.xml
+/Volumes/Luis/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.csprojResolveAssemblyReference.cache
+/Volumes/Luis/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.csproj.CoreCompileInputs.cache
+/Volumes/Luis/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.dll
+/Volumes/Luis/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.pdb
+/Users/luisnegrete/Documents/GitHub/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Plugins.Permissions.dll
+/Users/luisnegrete/Documents/GitHub/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Plugins.Permissions.pdb
+/Users/luisnegrete/Documents/GitHub/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Core.dll
+/Users/luisnegrete/Documents/GitHub/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Platform.dll
+/Users/luisnegrete/Documents/GitHub/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.Abstractions.dll
+/Users/luisnegrete/Documents/GitHub/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.dll
+/Users/luisnegrete/Documents/GitHub/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Platform.dll.mdb
+/Users/luisnegrete/Documents/GitHub/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.xml
+/Users/luisnegrete/Documents/GitHub/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.Abstractions.xml
+/Users/luisnegrete/Documents/GitHub/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.csprojResolveAssemblyReference.cache
+/Users/luisnegrete/Documents/GitHub/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.csproj.CoreCompileInputs.cache
+/Users/luisnegrete/Documents/GitHub/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.dll
+/Users/luisnegrete/Documents/GitHub/PorpoiseMobileLuis/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.pdb
+/Users/luisnegrete/Documents/PorpoiseSourceTree/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Plugins.Permissions.dll
+/Users/luisnegrete/Documents/PorpoiseSourceTree/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Plugins.Permissions.pdb
+/Users/luisnegrete/Documents/PorpoiseSourceTree/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Core.dll
+/Users/luisnegrete/Documents/PorpoiseSourceTree/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Platform.dll
+/Users/luisnegrete/Documents/PorpoiseSourceTree/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.Abstractions.dll
+/Users/luisnegrete/Documents/PorpoiseSourceTree/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.dll
+/Users/luisnegrete/Documents/PorpoiseSourceTree/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Platform.dll.mdb
+/Users/luisnegrete/Documents/PorpoiseSourceTree/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.xml
+/Users/luisnegrete/Documents/PorpoiseSourceTree/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.Abstractions.xml
+/Users/luisnegrete/Documents/PorpoiseSourceTree/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.csprojResolveAssemblyReference.cache
+/Users/luisnegrete/Documents/PorpoiseSourceTree/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.csproj.CoreCompileInputs.cache
+/Users/luisnegrete/Documents/PorpoiseSourceTree/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.dll
+/Users/luisnegrete/Documents/PorpoiseSourceTree/PorpoiseMobileApp/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.pdb
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Plugins.Permissions.dll
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Plugins.Permissions.pdb
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Core.dll
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Platform.dll
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.Abstractions.dll
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.dll
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Platform.dll.mdb
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.xml
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.Abstractions.xml
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.csprojAssemblyReference.cache
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.csproj.CoreCompileInputs.cache
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.csproj.CopyComplete
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.dll
+/Users/usuario/Documents/SRENDIP V2/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.pdb
+/Users/usuario/Documents/SRENDIP V3/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Plugins.Permissions.dll
+/Users/usuario/Documents/SRENDIP V3/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Plugins.Permissions.pdb
+/Users/usuario/Documents/SRENDIP V3/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Core.dll
+/Users/usuario/Documents/SRENDIP V3/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Platform.dll
+/Users/usuario/Documents/SRENDIP V3/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.Abstractions.dll
+/Users/usuario/Documents/SRENDIP V3/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.dll
+/Users/usuario/Documents/SRENDIP V3/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/MvvmCross.Platform.dll.mdb
+/Users/usuario/Documents/SRENDIP V3/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.xml
+/Users/usuario/Documents/SRENDIP V3/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/bin/Release/Plugin.Permissions.Abstractions.xml
+/Users/usuario/Documents/SRENDIP V3/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.csprojAssemblyReference.cache
+/Users/usuario/Documents/SRENDIP V3/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.csproj.CoreCompileInputs.cache
+/Users/usuario/Documents/SRENDIP V3/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.csproj.CopyComplete
+/Users/usuario/Documents/SRENDIP V3/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.dll
+/Users/usuario/Documents/SRENDIP V3/PROYECTO SRENDIP/SRENDIP APP/MvvmCross.Plugins.Permissions/obj/Release/MvvmCross.Plugins.Permissions.pdb
